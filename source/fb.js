@@ -6,12 +6,13 @@ realMouse(Nightmare);
 module.exports = {
     login: function() {
         var nightmare = Nightmare({
-            show: true
+            show: false
         })
         nightmare
             .goto('https://www.facebook.com/')
             .insert('#email', 'luklukaha@gmail.com')
             .insert('#pass', 'Cipc0pmimi')
+            .screenshot('fblogin.png')
             .realClick('#loginbutton')
             .wait('div[data-click=profile_icon]')
             .end()
