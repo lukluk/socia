@@ -10,8 +10,8 @@ module.exports = {
         })
         nightmare
             .goto('https://www.facebook.com/')
-            .insert('#email', 'luklukaha@gmail.com')
-            .insert('#pass', 'Cipc0pmimi')
+            .type('#email', 'luklukaha@gmail.com')
+            .type('#pass', 'Cipc0pmimi')
             .screenshot('fblogin.png')
             .realClick('#loginbutton')
             .wait('div[data-click=profile_icon]')
