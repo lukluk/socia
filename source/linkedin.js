@@ -83,7 +83,7 @@ module.exports = {
         if(now)
         now = now[0]
       }
-      now = striptags(now1
+      now = striptags(now)
       var name = findStringBetween(result,'<h1 class="pv-top-card-section__name','</h1>')
       if(typeof now !== 'string'){
         if(now)

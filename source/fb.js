@@ -209,7 +209,7 @@ module.exports = {
                         job: jobs,
                         edu: edus
                     }
-                })
+                })                
                 .then(function(data) {
                     profile.about.eduAndJob = data
                     console.log('edu', data)
