@@ -19,7 +19,20 @@ module.exports = {
                 console.log('success')
                 if (err) console.log(err)
             })
-    },
+    },    
+    check: function() {
+        var nightmare = Nightmare({
+            show: true
+        })
+        nightmare
+            .goto('https://www.facebook.com/')
+            .screenshot('fb-check.png')
+            .end()
+            .then(function(err) {
+                console.log('success')
+              
+            })
+    },  
     likes:function(req,res){
       var nightmare = Nightmare({
           show: true

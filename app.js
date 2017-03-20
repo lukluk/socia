@@ -52,6 +52,14 @@ function server() {
     })
     app.listen(3000)
 }
+if (process.argv[2] == 'check') {
+    if(process.argv[3]=='fb'){
+        fb.check()
+    }else
+    if(process.argv[3]=='linkedin'){
+        ld.check()
+    }
+}else
 if (process.argv[2] == 'setup') {
     setup()
 } else {
